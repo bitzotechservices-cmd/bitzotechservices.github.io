@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitzo - Next-Gen Tech Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <!-- <span class="logo-text">BITZO</span> -->
+				<img src="Bitzo.png" style="width:10%;"/>
+                <!-- <div class="logo-pulse"></div> -->
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#services">Services</a></li>
+                <!-- <li><a href="#work">Work</a></li> -->
+                <li><a href="#tech">Technology</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="cta-button">Get Started</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Now Available: Tech Solutions</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Built So</span>
+                <span class="title-line title-gradient">You Can</span>
+                <span class="title-line">Grow</span>
+            </h1>
+            <p class="hero-subtitle">An IT solutions service led by an industry expert, focused on website and 
+			app development, maintenance, and support.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="location.href='#services'">
+                    <span>Explore Services</span>
+                    <div class="btn-glow"></div>
+                </button>
+                <button class="btn-secondary">
+                    <span>Contact now</span>
+                </button>
+            </div>
+			<!--
+            <div class="stats-row">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Projects Delivered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Available</div>
+                </div>
+            </div>
+			-->
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1">
+                <div class="card-icon">⚡</div>
+                <div class="card-text">Creativity</div>
+            </div>
+            <div class="floating-card card-2">
+                <div class="card-icon">🔒</div>
+                <div class="card-text">Secure</div>
+            </div>
+            <div class="floating-card card-3">
+                <div class="card-icon">🚀</div>
+                <div class="card-text">Scalable</div>
+            </div>
+            <div class="center-sphere">
+                <div class="sphere-ring ring-1"></div>
+                <div class="sphere-ring ring-2"></div>
+                <div class="sphere-ring ring-3"></div>
+                <div class="sphere-core"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-header">
+            <span class="section-label">Our Expertise</span>
+            <h2 class="section-title">Services That Drive Results</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <div class="icon-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                </div>
+                <h3>Web Development</h3>
+                <p>Build lightning-fast, responsive web applications with modern frameworks and best practices.</p>
+                <div class="service-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">.Net</span>
+                </div>
+            </div>
+
+            <div class="service-card featured">
+                <div class="featured-badge">Most Popular</div>
+                <div class="service-icon">
+                    <div class="icon-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                    </div>
+                </div>
+                <h3>Mobile Apps</h3>
+                <p>Native and cross-platform mobile applications that users love, built for iOS and Android.</p>
+                <div class="service-tags">
+                    <span class="tag">React Native</span>
+                    <span class="tag">Flutter</span>
+                    <span class="tag">Flet Python</span>
+                </div>
+            </div>
+
+            <div class="service-card">
+				<div class="service-icon">
+					<div class="icon-wrapper">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<circle cx="5" cy="12" r="2"></circle>
+							<circle cx="12" cy="5" r="2"></circle>
+							<circle cx="12" cy="19" r="2"></circle>
+							<circle cx="19" cy="12" r="2"></circle>
+							<line x1="7" y1="12" x2="10" y2="7"></line>
+							<line x1="7" y1="12" x2="10" y2="17"></line>
+							<line x1="14" y1="7" x2="17" y2="12"></line>
+							<line x1="14" y1="17" x2="17" y2="12"></line>
+						</svg>
+					</div>
+				</div>
+				<h3>Machine Learning</h3>
+				<p>Build intelligent models that learn from data to automate processes and predict outcomes.</p>
+				<div class="service-tags">
+					<span class="tag">Python</span>
+					<span class="tag">TensorFlow</span>
+					<span class="tag">Scikit-Learn</span>
+				</div>
+			</div>
+
+            <div class="service-card">
+				<div class="service-icon">
+					<div class="icon-wrapper">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<circle cx="12" cy="12" r="2"></circle>
+							<path d="M4.93 4.93a10 10 0 0 1 14.14 0"></path>
+							<path d="M7.76 7.76a6 6 0 0 1 8.48 0"></path>
+							<path d="M16.24 16.24a6 6 0 0 1-8.48 0"></path>
+							<path d="M19.07 19.07a10 10 0 0 1-14.14 0"></path>
+						</svg>
+					</div>
+				</div>
+				<h3>IoT Projects</h3>
+				<p>End-to-end Internet of Things projects including hardware integration, data monitoring, and automation.</p>
+				<div class="service-tags">
+					<span class="tag">Jetson Nano</span>
+					<span class="tag">Raspberry Pi</span>
+					<span class="tag">Arduino</span>
+				</div>
+			</div>
+
+
+            <div class="service-card">
+				<div class="service-icon">
+					<div class="icon-wrapper">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+							<path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"></path>
+						</svg>
+					</div>
+				</div>
+				<h3>Academic & Research Project Support</h3>
+				<p>We provide complete academic and research projects, including problem statements, implementation, and documentation.</p>
+				<div class="service-tags">
+					<span class="tag">Final Year Projects</span>
+					<span class="tag">Research Projects</span>
+				</div>
+			</div>
+
+			<div class="service-card">
+			<div class="service-icon">
+					<div class="icon-wrapper">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M3 3v18h18"></path>
+							<rect x="7" y="13" width="3" height="5"></rect>
+							<rect x="12" y="9" width="3" height="9"></rect>
+							<rect x="17" y="5" width="3" height="13"></rect>
+						</svg>
+					</div>
+				</div>
+				<h3>Data Analysis</h3>
+				<p>Transform raw data into meaningful insights to support smarter decision-making.</p>
+				<div class="service-tags">
+					<span class="tag">Data Visualization</span>
+					<span class="tag">Statistical Analysis</span>
+				</div>
+			</div>
+			
+			
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech" class="tech-stack">
+        <div class="section-header">
+            <span class="section-label">Technology Stack</span>
+            <h2 class="section-title">We Work With Industry Leaders</h2>
+        </div>
+        <div class="tech-marquee">
+            <div class="marquee-content">
+                <div class="tech-item">Django</div>
+                <div class="tech-item">Flask</div>
+                <div class="tech-item">ASP.Net Core/MVC</div>
+                <div class="tech-item">Flutter</div>
+                <div class="tech-item">Tableau/PowerBI</div>
+                <div class="tech-item">Machine Learning</div>
+                <div class="tech-item">Data Analysis</div>
+                <div class="tech-item">MS SQL</div>
+                <div class="tech-item">MySQL</div>
+                <div class="tech-item">Spring boot</div>
+                <!-- Duplicate for seamless loop -->
+                <div class="tech-item">Django</div>
+                <div class="tech-item">Flask</div>
+                <div class="tech-item">ASP.Net Core/MVC</div>
+                <div class="tech-item">Flutter</div>
+                <div class="tech-item">Tableau/PowerBI</div>
+                <div class="tech-item">Machine Learning</div>
+                <div class="tech-item">Data Analysis</div>
+                <div class="tech-item">MS SQL</div>
+                <div class="tech-item">MySQL</div>
+                <div class="tech-item">Spring boot</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2 class="cta-title">Ready to Start Your Project?</h2>
+            <p class="cta-subtitle">Let's build something extraordinary together. Our team is ready to bring your vision to life.</p>
+            <button class="btn-cta">
+                <span>Schedule a Consultation</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </button>
+        </div>
+        <div class="cta-visual">
+            <div class="pulse-circle circle-1"></div>
+            <div class="pulse-circle circle-2"></div>
+            <div class="pulse-circle circle-3"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BITZO</h3>
+                <p>Transforming businesses through innovative technology solutions.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Mobile Apps</a></li>
+                    <li><a href="#">Cloud Solutions</a></li>
+                    <li><a href="#">AI Integration</a></li>
+                </ul>
+            </div>
+			<!-- 
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+			-->
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Whatsapp</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <!-- <li><a href="#">Dribbble</a></li> -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bitzo Tech Services. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
