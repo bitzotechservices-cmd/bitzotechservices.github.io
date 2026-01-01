@@ -34,7 +34,7 @@
                 <li><a href="#services">Services</a></li>
                 <!-- <li><a href="#work">Work</a></li> -->
                 <li><a href="#tech">Technology</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cta-section">Contact</a></li>
             </ul>
             <button class="cta-button">Get Started</button>
         </div>
@@ -59,7 +59,7 @@
                     <span>Explore Services</span>
                     <div class="btn-glow"></div>
                 </button>
-                <button class="btn-secondary">
+                <button class="btn-secondary" onclick="location.href='#cta-section'">
                     <span>Contact now</span>
                 </button>
             </div>
@@ -267,24 +267,52 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
+    <section class="cta-section" id="cta-section">
         <div class="cta-content">
             <h2 class="cta-title">Ready to Start Your Project?</h2>
             <p class="cta-subtitle">Let's build something extraordinary together. Our team is ready to bring your vision to life.</p>
-            <button class="btn-cta">
-                <span>Schedule a Consultation</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-            </button>
+            <button class="btn-cta" id="openModal">
+				<span>Contact us</span>
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+					<line x1="5" y1="12" x2="19" y2="12"></line>
+					<polyline points="12 5 19 12 12 19"></polyline>
+				</svg>
+			</button>
         </div>
+		
+
         <div class="cta-visual">
             <div class="pulse-circle circle-1"></div>
             <div class="pulse-circle circle-2"></div>
             <div class="pulse-circle circle-3"></div>
         </div>
     </section>
+	
+	<!-- pop up -->
+	<div class="modal-overlay" id="modal">
+		<div class="modal">
+			<button class="close-btn" id="closeModal">&times;</button>
+
+			<h3>Contact Us</h3>
+
+			<div class="contact-item">
+				<span>📞</span>
+				<a href="tel:+919307520274">9307520274</a>
+				<a href="tel:+919529451160">9529451160</a>
+			</div>
+
+			<div class="contact-item">
+				<span>📧</span>
+				<a href="mailto:bitzotechservices@gmail.com">bitzotechservices@gmail.com</a>
+			</div>
+
+			<div class="contact-item">
+				<span>📸</span>
+				<a href="https://www.instagram.com/bitzotechservices?igsh=MWxkYnVidG4yeDV5dA==" target="_blank">Bitzo Tech service</a>
+			</div>
+		</div>
+	</div>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -328,3 +356,22 @@
     </footer>
 </body>
 </html>
+<script>
+    const openModal = document.getElementById("openModal");
+    const closeModal = document.getElementById("closeModal");
+    const modal = document.getElementById("modal");
+
+    openModal.addEventListener("click", () => {
+        modal.style.display = "flex";
+    });
+
+    closeModal.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+</script>
