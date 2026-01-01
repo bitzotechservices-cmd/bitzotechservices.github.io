@@ -1043,3 +1043,119 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.btn-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 26px;
+    border-radius: 30px;
+
+    background: rgba(0, 212, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1.5px solid rgba(0, 212, 255, 0.3);
+    color: var(--accent-cyan);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+    background: rgba(0, 123, 255, 0.2);
+    border-color: rgba(0, 123, 255, 0.9);
+    transform: translateY(-2px);
+}
+
+/* Overlay */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+/* Glass Modal */
+
+.modal {
+    background: rgba(0, 212, 255, 0.1);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 18px;
+
+    padding: 28px;
+    width: 90%;
+    max-width: 360px;
+    color: var(--accent-cyan);
+    text-align: center;
+
+    box-shadow: 0 8px 32px rgba(0, 123, 255, 0.25);
+    animation: glassFade 0.3s ease;
+}
+
+/* Title */
+.modal h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/* Contact Items */
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 14px 0;
+    font-size: 16px;
+}
+
+.contact-item a {
+    color: #e6f2ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-item a:hover {
+    color: #ffffff;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Animation */
+@keyframes glassFade {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.contact-item {
+    padding: 10px 14px;
+    border-radius: 12px;
+    transition: background 0.3s ease;
+}
+
+.contact-item:hover {
+    background: rgba(0, 123, 255, 0.15);
+}
