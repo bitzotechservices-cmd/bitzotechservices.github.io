@@ -1159,3 +1159,16 @@ body {
 .contact-item:hover {
     background: rgba(0, 123, 255, 0.15);
 }
+
+.logo-img {
+    width: auto;
+    max-width: 140px;   /* desktop size */
+    height: auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .logo-img {
+        max-width: 110px;
+    }
+}
